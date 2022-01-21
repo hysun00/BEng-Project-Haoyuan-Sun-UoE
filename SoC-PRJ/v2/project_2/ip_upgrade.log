@@ -1,0 +1,58 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jan 16 09:36:45 2022
+| Host         : DESKTOP-816BTIT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_conv_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_conv_0_0 (xilinx.com:hls:conv:0.0) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jan 16 06:31:14 2022
+| Host         : DESKTOP-816BTIT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_conv_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_conv_0_0 (xilinx.com:hls:conv:0.0) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jan 16 00:49:43 2022
+| Host         : DESKTOP-816BTIT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_conv_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_conv_0_0 (xilinx.com:hls:conv:0.0) to Vivado generation flows.
+

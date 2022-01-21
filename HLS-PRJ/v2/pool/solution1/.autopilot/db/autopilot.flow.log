@@ -1,0 +1,1123 @@
+INFO-FLOW: Workspace F:/BEng_Project/HLS_PRJ/v2/pool/solution1 opened at Fri Jan 14 01:37:12 +0000 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.14 sec.
+Command     ap_source done; 0.141 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.206 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.293 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Execute     config_export -version=0.0.0 
+Command   open_solution done; 0.496 sec.
+Execute   set_part xc7z020-clg400-1 -tool vivado 
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_export -format ip_catalog -rtl verilog -version 0.0.0 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'pool/pool.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling pool/pool.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       is_encrypted pool/pool.cpp 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "pool/pool.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E pool/pool.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.1/common/technology/autopilot -I D:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp
+Command       clang done; 1.097 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.663 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp"  -o "F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.1/common/technology/autopilot -I D:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.385 sec.
+INFO-FLOW: Done: GCC PP time: 3.1 seconds per iteration
+Execute       source D:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source D:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source D:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp std=gnu++98 -directive=F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.63 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp std=gnu++98 -directive=F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/all.directive.json -quiet -fix-errors F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.579 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/xilinx-dataflow-lawyer.pool.pp.0.cpp.diag.yml F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/xilinx-dataflow-lawyer.pool.pp.0.cpp.out.log 2> F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/xilinx-dataflow-lawyer.pool.pp.0.cpp.err.log 
+Command       ap_eval done; 0.381 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/tidy-3.1.pool.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/tidy-3.1.pool.pp.0.cpp.out.log 2> F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/tidy-3.1.pool.pp.0.cpp.err.log 
+Command         ap_eval done; 0.741 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/xilinx-legacy-rewriter.pool.pp.0.cpp.out.log 2> F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/xilinx-legacy-rewriter.pool.pp.0.cpp.err.log 
+Command         ap_eval done; 0.376 sec.
+Command       tidy_31 done; 1.123 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2.1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.269 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.1/common/technology/autopilot -I D:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.bc
+Command       clang done; 1.385 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.g.bc -hls-opt -except-internalize pool -LD:/Xilinx/Vivado/2019.1/win64/lib -lhlsm -lhlsmc++ -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 0.855 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 166.195 ; gain = 74.676
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 166.195 ; gain = 74.676
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.pp.bc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/Xilinx/Vivado/2019.1/win64/lib -lfloatconversion -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.546 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top pool -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.g.0.bc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 166.195 ; gain = 74.676
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.g.1.bc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.122 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.g.2.prechk.bc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] pool/pool.cpp:140: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 166.195 ; gain = 74.676
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.g.1.bc to F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.o.1.bc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1' (pool/pool.cpp:125) in function 'pool_2D' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1' (pool/pool.cpp:81) in function 'pool_1D' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (pool/pool.cpp:137) in function 'pool_2D' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (pool/pool.cpp:90) in function 'pool_1D' completely with a factor of 8.
+INFO: [XFORM 203-712] Applying dataflow to function 'pool', detected/extracted 3 process function(s): 
+	 'pool_1D54'
+	 'pool_2D'
+	 'hs2axis'.
+Command         transform done; 0.545 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.o.1.tmp.bc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (pool/pool.cpp:126:5) to (pool/pool.cpp:144:5) in function 'pool_2D'... converting 25 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (pool/pool.cpp:82:5) to (pool/pool.cpp:98:5) in function 'pool_1D54'... converting 25 basic blocks.
+Command         transform done; 0.423 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 166.195 ; gain = 74.676
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.o.2.bc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (pool/pool.cpp:122:13) in function 'pool_2D'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (pool/pool.cpp:119:13) in function 'pool_2D'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (pool/pool.cpp:78:13) in function 'pool_1D54'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (pool/pool.cpp:75:13) in function 'pool_1D54'.
+Command         transform done; 0.69 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 178.582 ; gain = 87.062
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 2.496 sec.
+Command     elaborate done; 12.184 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'pool' ...
+Execute       ap_set_top_model pool 
+Execute       get_model_list pool -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model pool 
+Execute       preproc_iomode -model hs2axis 
+Execute       preproc_iomode -model pool_2D 
+Execute       preproc_iomode -model pool_1D54 
+Execute       get_model_list pool -filter all-wo-channel 
+INFO-FLOW: Model list for configure: pool_1D54 pool_2D hs2axis pool
+INFO-FLOW: Configuring Module : pool_1D54 ...
+Execute       set_default_model pool_1D54 
+Execute       apply_spec_resource_limit pool_1D54 
+INFO-FLOW: Configuring Module : pool_2D ...
+Execute       set_default_model pool_2D 
+Execute       apply_spec_resource_limit pool_2D 
+INFO-FLOW: Configuring Module : hs2axis ...
+Execute       set_default_model hs2axis 
+Execute       apply_spec_resource_limit hs2axis 
+INFO-FLOW: Configuring Module : pool ...
+Execute       set_default_model pool 
+Execute       apply_spec_resource_limit pool 
+INFO-FLOW: Model list for preprocess: pool_1D54 pool_2D hs2axis pool
+INFO-FLOW: Preprocessing Module: pool_1D54 ...
+Execute       set_default_model pool_1D54 
+Execute       cdfg_preprocess -model pool_1D54 
+Execute       rtl_gen_preprocess pool_1D54 
+INFO-FLOW: Preprocessing Module: pool_2D ...
+Execute       set_default_model pool_2D 
+Execute       cdfg_preprocess -model pool_2D 
+Execute       rtl_gen_preprocess pool_2D 
+INFO-FLOW: Preprocessing Module: hs2axis ...
+Execute       set_default_model hs2axis 
+Execute       cdfg_preprocess -model hs2axis 
+Execute       rtl_gen_preprocess hs2axis 
+INFO-FLOW: Preprocessing Module: pool ...
+Execute       set_default_model pool 
+Execute       cdfg_preprocess -model pool 
+Execute       rtl_gen_preprocess pool 
+INFO-FLOW: Model list for synthesis: pool_1D54 pool_2D hs2axis pool
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool_1D54' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model pool_1D54 
+Execute       schedule -model pool_1D54 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 38.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.276 sec.
+INFO: [HLS 200-111]  Elapsed time: 13.746 seconds; current allocated memory: 130.881 MB.
+Execute       syn_report -verbosereport -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.verbose.sched.rpt 
+Execute       db_write -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.sched.adb -f 
+INFO-FLOW: Finish scheduling pool_1D54.
+Execute       set_default_model pool_1D54 
+Execute       bind -model pool_1D54 
+BIND OPTION: model=pool_1D54
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.181 seconds; current allocated memory: 131.580 MB.
+Execute       syn_report -verbosereport -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.verbose.bind.rpt 
+Execute       db_write -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.bind.adb -f 
+INFO-FLOW: Finish binding pool_1D54.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool_2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model pool_2D 
+Execute       schedule -model pool_2D 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 38.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.359 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.502 seconds; current allocated memory: 132.174 MB.
+Execute       syn_report -verbosereport -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.verbose.sched.rpt 
+Execute       db_write -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.sched.adb -f 
+INFO-FLOW: Finish scheduling pool_2D.
+Execute       set_default_model pool_2D 
+Execute       bind -model pool_2D 
+BIND OPTION: model=pool_2D
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.183 seconds; current allocated memory: 132.794 MB.
+Execute       syn_report -verbosereport -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.verbose.bind.rpt 
+Execute       db_write -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.bind.adb -f 
+INFO-FLOW: Finish binding pool_2D.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hs2axis' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model hs2axis 
+Execute       schedule -model hs2axis 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.138 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.286 seconds; current allocated memory: 133.010 MB.
+Execute       syn_report -verbosereport -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.verbose.sched.rpt 
+Execute       db_write -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.sched.adb -f 
+INFO-FLOW: Finish scheduling hs2axis.
+Execute       set_default_model hs2axis 
+Execute       bind -model hs2axis 
+BIND OPTION: model=hs2axis
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.055 seconds; current allocated memory: 133.169 MB.
+Execute       syn_report -verbosereport -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.verbose.bind.rpt 
+Execute       db_write -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.bind.adb -f 
+INFO-FLOW: Finish binding hs2axis.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model pool 
+Execute       schedule -model pool 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.064 seconds; current allocated memory: 133.328 MB.
+Execute       syn_report -verbosereport -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.verbose.sched.rpt 
+Execute       db_write -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.sched.adb -f 
+INFO-FLOW: Finish scheduling pool.
+Execute       set_default_model pool 
+Execute       bind -model pool 
+BIND OPTION: model=pool
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.107 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.146 seconds; current allocated memory: 133.723 MB.
+Execute       syn_report -verbosereport -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.verbose.bind.rpt 
+Command       syn_report done; 0.103 sec.
+Execute       db_write -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.bind.adb -f 
+INFO-FLOW: Finish binding pool.
+Execute       get_model_list pool -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess pool_1D54 
+Execute       rtl_gen_preprocess pool_2D 
+Execute       rtl_gen_preprocess hs2axis 
+Execute       rtl_gen_preprocess pool 
+INFO-FLOW: Model list for RTL generation: pool_1D54 pool_2D hs2axis pool
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool_1D54' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model pool_1D54 -vendor xilinx -mg_file F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'pool_mul_64ns_32ns_96_5_1' to 'pool_mul_64ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pool_srem_32ns_32ns_32_36_1' to 'pool_srem_32ns_32cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'pool_mul_64ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pool_srem_32ns_32cud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool_1D54'.
+INFO: [HLS 200-111]  Elapsed time: 0.226 seconds; current allocated memory: 135.559 MB.
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute       gen_rtl pool_1D54 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/systemc/pool_1D54 -synmodules pool_1D54 pool_2D hs2axis pool 
+Execute       gen_rtl pool_1D54 -style xilinx -f -lang vhdl -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/vhdl/pool_1D54 
+Execute       gen_rtl pool_1D54 -style xilinx -f -lang vlog -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/verilog/pool_1D54 
+Execute       syn_report -csynth -model pool_1D54 -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/report/pool_1D54_csynth.rpt 
+Execute       syn_report -rtlxml -model pool_1D54 -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/report/pool_1D54_csynth.xml 
+Execute       syn_report -verbosereport -model pool_1D54 -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.verbose.rpt 
+Command       syn_report done; 0.118 sec.
+Execute       db_write -model pool_1D54 -f -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.adb 
+Execute       gen_tb_info pool_1D54 -p F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool_2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model pool_2D -vendor xilinx -mg_file F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'pool_mul_64ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pool_srem_32ns_32cud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool_2D'.
+INFO: [HLS 200-111]  Elapsed time: 0.526 seconds; current allocated memory: 137.266 MB.
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute       gen_rtl pool_2D -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/systemc/pool_2D -synmodules pool_1D54 pool_2D hs2axis pool 
+Execute       gen_rtl pool_2D -style xilinx -f -lang vhdl -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/vhdl/pool_2D 
+Execute       gen_rtl pool_2D -style xilinx -f -lang vlog -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/verilog/pool_2D 
+Execute       syn_report -csynth -model pool_2D -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/report/pool_2D_csynth.rpt 
+Execute       syn_report -rtlxml -model pool_2D -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/report/pool_2D_csynth.xml 
+Execute       syn_report -verbosereport -model pool_2D -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.verbose.rpt 
+Command       syn_report done; 0.119 sec.
+Execute       db_write -model pool_2D -f -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.adb 
+Execute       gen_tb_info pool_2D -p F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hs2axis' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model hs2axis -vendor xilinx -mg_file F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hs2axis'.
+INFO: [HLS 200-111]  Elapsed time: 0.476 seconds; current allocated memory: 137.969 MB.
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute       gen_rtl hs2axis -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/systemc/hs2axis -synmodules pool_1D54 pool_2D hs2axis pool 
+Execute       gen_rtl hs2axis -style xilinx -f -lang vhdl -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/vhdl/hs2axis 
+Execute       gen_rtl hs2axis -style xilinx -f -lang vlog -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/verilog/hs2axis 
+Execute       syn_report -csynth -model hs2axis -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/report/hs2axis_csynth.rpt 
+Execute       syn_report -rtlxml -model hs2axis -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/report/hs2axis_csynth.xml 
+Execute       syn_report -verbosereport -model hs2axis -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.verbose.rpt 
+Execute       db_write -model hs2axis -f -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.adb 
+Execute       gen_tb_info hs2axis -p F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model pool -vendor xilinx -mg_file F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/in_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/out_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/ch_div_K' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/height_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/width_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/height_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/width_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/Kx' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/Ky' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pool' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'ch_div_K', 'width_in', 'height_out', 'width_out', 'Kx' and 'Ky' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_pool_2D_U0' to 'start_for_pool_2DdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_hs2axis_U0' to 'start_for_hs2axiseOg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool'.
+INFO: [HLS 200-111]  Elapsed time: 0.217 seconds; current allocated memory: 138.680 MB.
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute       gen_rtl pool -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/systemc/pool -synmodules pool_1D54 pool_2D hs2axis pool 
+Execute       gen_rtl pool -istop -style xilinx -f -lang vhdl -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/vhdl/pool 
+Execute       gen_rtl pool -istop -style xilinx -f -lang vlog -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/verilog/pool 
+Execute       syn_report -csynth -model pool -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/report/pool_csynth.rpt 
+Execute       syn_report -rtlxml -model pool -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/syn/report/pool_csynth.xml 
+Execute       syn_report -verbosereport -model pool -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.verbose.rpt 
+Command       syn_report done; 0.12 sec.
+Execute       db_write -model pool -f -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.adb 
+Execute       gen_tb_info pool -p F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool 
+Execute       export_constraint_db -f -tool general -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.constraint.tcl 
+Execute       syn_report -designview -model pool -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.design.xml 
+Command       syn_report done; 0.151 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model pool -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model pool -o F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks pool 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain pool 
+INFO-FLOW: Model list for RTL component generation: pool_1D54 pool_2D hs2axis pool
+INFO-FLOW: Handling components in module [pool_1D54] ... 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.compgen.tcl 
+INFO-FLOW: Found component pool_mul_64ns_32nbkb.
+INFO-FLOW: Append model pool_mul_64ns_32nbkb
+INFO-FLOW: Found component pool_srem_32ns_32cud.
+INFO-FLOW: Append model pool_srem_32ns_32cud
+INFO-FLOW: Handling components in module [pool_2D] ... 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.compgen.tcl 
+INFO-FLOW: Found component pool_2D_buf_V.
+INFO-FLOW: Append model pool_2D_buf_V
+INFO-FLOW: Handling components in module [hs2axis] ... 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.compgen.tcl 
+INFO-FLOW: Handling components in module [pool] ... 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.tcl 
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w128_d8_A.
+INFO-FLOW: Append model fifo_w128_d8_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w128_d2_A.
+INFO-FLOW: Append model fifo_w128_d2_A
+INFO-FLOW: Found component start_for_pool_2DdEe.
+INFO-FLOW: Append model start_for_pool_2DdEe
+INFO-FLOW: Found component start_for_hs2axiseOg.
+INFO-FLOW: Append model start_for_hs2axiseOg
+INFO-FLOW: Found component pool_AXILiteS_s_axi.
+INFO-FLOW: Append model pool_AXILiteS_s_axi
+INFO-FLOW: Append model pool_1D54
+INFO-FLOW: Append model pool_2D
+INFO-FLOW: Append model hs2axis
+INFO-FLOW: Append model pool
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: pool_mul_64ns_32nbkb pool_srem_32ns_32cud pool_2D_buf_V fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d3_A fifo_w32_d2_A fifo_w32_d2_A fifo_w128_d8_A fifo_w32_d2_A fifo_w32_d2_A fifo_w128_d2_A start_for_pool_2DdEe start_for_hs2axiseOg pool_AXILiteS_s_axi pool_1D54 pool_2D hs2axis pool
+INFO-FLOW: To file: write model pool_mul_64ns_32nbkb
+INFO-FLOW: To file: write model pool_srem_32ns_32cud
+INFO-FLOW: To file: write model pool_2D_buf_V
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w128_d8_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w128_d2_A
+INFO-FLOW: To file: write model start_for_pool_2DdEe
+INFO-FLOW: To file: write model start_for_hs2axiseOg
+INFO-FLOW: To file: write model pool_AXILiteS_s_axi
+INFO-FLOW: To file: write model pool_1D54
+INFO-FLOW: To file: write model pool_2D
+INFO-FLOW: To file: write model hs2axis
+INFO-FLOW: To file: write model pool
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d F:/BEng_Project/HLS_PRJ/v2/pool/solution1
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.142 sec.
+Command       ap_source done; 0.143 sec.
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'pool_mul_64ns_32nbkb_MulnS_0'
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'pool_srem_32ns_32cud_div'
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'pool_2D_buf_V_ram (RAM)' using block RAMs with power-on initialization.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.compgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'ch_div_K_c_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'height_in_c_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'height_out_c_U(fifo_w32_d3_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'width_out_c_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'Ky_c_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'stream_tp_V_V_U(fifo_w128_d8_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'ch_div_K_c7_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'width_out_c8_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'stream_tp2_V_V_U(fifo_w128_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pool_2DdEe_U(start_for_pool_2DdEe)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_hs2axiseOg_U(start_for_hs2axiseOg)' using Shift Registers.
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.229 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d F:/BEng_Project/HLS_PRJ/v2/pool/solution1
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.116 sec.
+Command       ap_source done; 0.116 sec.
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=pool xml_exists=0
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.compgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.compgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.compgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.compgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.compgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.compgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.compgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.compgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.compgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.constraint.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=6
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=10
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=19 #gSsdmPorts=6
+Execute       source D:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute         source D:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.dataonly.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.dataonly.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.dataonly.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.constraint.tcl 
+Execute       sc_get_clocks pool 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.tbgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.tbgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.tbgen.tcl 
+Execute       source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 203.508 ; gain = 111.988
+INFO: [VHDL 208-304] Generating VHDL RTL for pool.
+INFO: [VLOG 209-307] Generating Verilog RTL for pool.
+Command     autosyn done; 5.315 sec.
+Command   csynth_design done; 17.511 sec.
+Command ap_source done; 18.105 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace F:/BEng_Project/HLS_PRJ/v2/pool/solution1 opened at Fri Jan 14 01:37:43 +0000 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.139 sec.
+Command     ap_source done; 0.14 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.186 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.273 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Execute     config_export -version=0.0.0 
+Command   open_solution done; 0.473 sec.
+Execute   export_design -rtl verilog -format ip_catalog -version 0.0.0 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog -version=0.0.0 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog -version 0.0.0
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.114 sec.
+Command     ap_source done; 0.114 sec.
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.113 sec.
+Command     ap_source done; 0.114 sec.
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=pool xml_exists=1
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.compgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.compgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.compgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.compgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.compgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.compgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.compgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.compgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.compgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.constraint.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=6
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=10
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=0 g_has_adaptors=false generate_bd_files=1 #modelList=19 #gSsdmPorts=6
+Execute     source D:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source D:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute     source D:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source D:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source D:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -xo 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.dataonly.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.dataonly.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.dataonly.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.constraint.tcl 
+Execute     sc_get_clocks pool 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_1D54.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool_2D.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/hs2axis.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       copying IP vlog from F:/BEng_Project/HLS_PRJ/v2/pool/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from F:/BEng_Project/HLS_PRJ/v2/pool/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 0_0 F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=6
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.dataonly.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.compgen.dataonly.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=pool
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=pool
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.rtl_wrap.cfg.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.constraint.tcl 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/pool.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source F:/BEng_Project/HLS_PRJ/v2/pool/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.14 sec.
+Command     ap_source done; 0.14 sec.
+Execute     source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec F:/BEng_Project/HLS_PRJ/v2/pool/solution1/impl/ip/pack.bat
+Command   export_design done; 9.539 sec.
+Command ap_source done; 10.016 sec.
+Execute cleanup_all 

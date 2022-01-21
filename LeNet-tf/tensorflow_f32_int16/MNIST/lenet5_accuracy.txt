@@ -1,0 +1,2 @@
+The accuracy of the LeNet-5 on MNIST is recorded below.
+0.9825

@@ -1,0 +1,80 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'pool/pool.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 166.055 ; gain = 74.598
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 166.055 ; gain = 74.598
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 166.055 ; gain = 74.598
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 166.055 ; gain = 74.598
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 169.945 ; gain = 78.488
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 172.340 ; gain = 80.883
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Pool' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (11.2658ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'Pool' consists of the following:
+	'mul' operation of DSP[123] ('ret.V', pool/pool.cpp:53) [121]  (3.36 ns)
+	'add' operation of DSP[123] ('ret.V', pool/pool.cpp:53) [123]  (3.02 ns)
+	'add' operation ('ret.V', pool/pool.cpp:53) [124]  (0 ns)
+	'add' operation ('add_ln53', pool/pool.cpp:53) [125]  (4.89 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 14.923 seconds; current allocated memory: 116.230 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.162 seconds; current allocated memory: 117.150 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/CHin_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/Hin_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/Win_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/Kx_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/Ky_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/mode_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/feature_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/feature_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Pool' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'CHin_V', 'Hin_V', 'Win_V', 'Kx_V', 'Ky_V', 'mode_V', 'feature_in' and 'feature_out' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'Pool_fadd_32ns_32ns_32_5_full_dsp_1' to 'Pool_fadd_32ns_32bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_fdiv_32ns_32ns_32_16_1' to 'Pool_fdiv_32ns_32cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_uitofp_32ns_32_6_1' to 'Pool_uitofp_32ns_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_fcmp_32ns_32ns_1_2_1' to 'Pool_fcmp_32ns_32eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_udiv_16ns_8ns_16_20_seq_1' to 'Pool_udiv_16ns_8nfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_mul_mul_16s_16ns_32_1_1' to 'Pool_mul_mul_16s_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_mac_muladd_16ns_16s_48ns_48_1_1' to 'Pool_mac_muladd_1hbi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Pool_fadd_32ns_32bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_fcmp_32ns_32eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_fdiv_32ns_32cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_mac_muladd_1hbi': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_mul_mul_16s_g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_udiv_16ns_8nfYi': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_uitofp_32ns_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Pool'.
+INFO: [HLS 200-111]  Elapsed time: 0.293 seconds; current allocated memory: 119.102 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Pool_udiv_16ns_8nfYi_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 190.883 ; gain = 99.426
+INFO: [VHDL 208-304] Generating VHDL RTL for Pool.
+INFO: [VLOG 209-307] Generating Verilog RTL for Pool.
+INFO: [HLS 200-112] Total elapsed time: 17.794 seconds; peak allocated memory: 119.102 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

@@ -1,0 +1,469 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'pool/pool.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 166.039 ; gain = 74.520
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 166.039 ; gain = 74.520
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 166.039 ; gain = 74.520
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] pool/pool.cpp:140: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 166.039 ; gain = 74.520
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1' (pool/pool.cpp:125) in function 'pool_2D' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1' (pool/pool.cpp:81) in function 'pool_1D' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (pool/pool.cpp:137) in function 'pool_2D' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (pool/pool.cpp:90) in function 'pool_1D' completely with a factor of 8.
+INFO: [XFORM 203-712] Applying dataflow to function 'pool', detected/extracted 3 process function(s): 
+	 'pool_1D54'
+	 'pool_2D'
+	 'hs2axis'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (pool/pool.cpp:126:5) to (pool/pool.cpp:144:5) in function 'pool_2D'... converting 25 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (pool/pool.cpp:82:5) to (pool/pool.cpp:98:5) in function 'pool_1D54'... converting 25 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 166.039 ; gain = 74.520
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (pool/pool.cpp:122:13) in function 'pool_2D'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (pool/pool.cpp:119:13) in function 'pool_2D'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (pool/pool.cpp:78:13) in function 'pool_1D54'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (pool/pool.cpp:75:13) in function 'pool_1D54'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 177.867 ; gain = 86.348
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pool' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool_1D54' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 38.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 26.936 seconds; current allocated memory: 130.865 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.698 seconds; current allocated memory: 131.549 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool_2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 38.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.218 seconds; current allocated memory: 132.127 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.713 seconds; current allocated memory: 132.747 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hs2axis' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.104 seconds; current allocated memory: 132.963 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.308 seconds; current allocated memory: 133.122 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.386 seconds; current allocated memory: 133.265 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.425 seconds; current allocated memory: 133.660 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool_1D54' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pool_mul_64ns_32ns_96_5_1' to 'pool_mul_64ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pool_srem_32ns_32ns_32_36_1' to 'pool_srem_32ns_32cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'pool_mul_64ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pool_srem_32ns_32cud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool_1D54'.
+INFO: [HLS 200-111]  Elapsed time: 0.735 seconds; current allocated memory: 135.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool_2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'pool_mul_64ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pool_srem_32ns_32cud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool_2D'.
+INFO: [HLS 200-111]  Elapsed time: 2.506 seconds; current allocated memory: 137.219 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hs2axis' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hs2axis'.
+INFO: [HLS 200-111]  Elapsed time: 2.263 seconds; current allocated memory: 137.922 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/in_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/out_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/ch_div_K' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/height_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/width_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/height_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/width_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/Kx' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/Ky' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pool' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'ch_div_K', 'width_in', 'height_out', 'width_out', 'Kx' and 'Ky' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_pool_2D_U0' to 'start_for_pool_2DdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_hs2axis_U0' to 'start_for_hs2axiseOg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool'.
+INFO: [HLS 200-111]  Elapsed time: 1.494 seconds; current allocated memory: 138.633 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pool_mul_64ns_32nbkb_MulnS_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'pool_srem_32ns_32cud_div'
+INFO: [RTMG 210-278] Implementing memory 'pool_2D_buf_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-285] Implementing FIFO 'ch_div_K_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_in_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_out_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_out_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Ky_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'stream_tp_V_V_U(fifo_w128_d8_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ch_div_K_c7_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_out_c8_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'stream_tp2_V_V_U(fifo_w128_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pool_2DdEe_U(start_for_pool_2DdEe)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_hs2axiseOg_U(start_for_hs2axiseOg)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:50 . Memory (MB): peak = 202.398 ; gain = 110.879
+INFO: [VHDL 208-304] Generating VHDL RTL for pool.
+INFO: [VLOG 209-307] Generating Verilog RTL for pool.
+INFO: [HLS 200-112] Total elapsed time: 50.16 seconds; peak allocated memory: 138.633 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'pool/pool.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 166.660 ; gain = 75.172
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 166.660 ; gain = 75.172
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 166.660 ; gain = 75.172
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] pool/pool.cpp:140: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 166.660 ; gain = 75.172
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1' (pool/pool.cpp:125) in function 'pool_2D' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1' (pool/pool.cpp:81) in function 'pool_1D' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (pool/pool.cpp:137) in function 'pool_2D' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (pool/pool.cpp:90) in function 'pool_1D' completely with a factor of 4.
+INFO: [XFORM 203-712] Applying dataflow to function 'pool', detected/extracted 3 process function(s): 
+	 'pool_1D54'
+	 'pool_2D'
+	 'hs2axis'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (pool/pool.cpp:126:5) to (pool/pool.cpp:144:5) in function 'pool_2D'... converting 13 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (pool/pool.cpp:82:5) to (pool/pool.cpp:98:5) in function 'pool_1D54'... converting 13 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 166.660 ; gain = 75.172
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (pool/pool.cpp:122:13) in function 'pool_2D'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (pool/pool.cpp:119:13) in function 'pool_2D'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (pool/pool.cpp:78:13) in function 'pool_1D54'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (pool/pool.cpp:75:13) in function 'pool_1D54'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 177.926 ; gain = 86.438
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pool' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool_1D54' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 38.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.99 seconds; current allocated memory: 130.872 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.171 seconds; current allocated memory: 131.497 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool_2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 38.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.464 seconds; current allocated memory: 132.011 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.163 seconds; current allocated memory: 132.593 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hs2axis' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.286 seconds; current allocated memory: 132.757 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.057 seconds; current allocated memory: 132.953 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.064 seconds; current allocated memory: 133.059 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.126 seconds; current allocated memory: 133.454 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool_1D54' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pool_mul_64ns_32ns_96_5_1' to 'pool_mul_64ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pool_srem_32ns_32ns_32_36_1' to 'pool_srem_32ns_32cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'pool_mul_64ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pool_srem_32ns_32cud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool_1D54'.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 134.913 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool_2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'pool_mul_64ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pool_srem_32ns_32cud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool_2D'.
+INFO: [HLS 200-111]  Elapsed time: 0.438 seconds; current allocated memory: 136.400 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hs2axis' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hs2axis'.
+INFO: [HLS 200-111]  Elapsed time: 0.438 seconds; current allocated memory: 137.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/in_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/out_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/ch_div_K' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/height_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/width_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/height_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/width_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/Kx' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/Ky' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pool' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'ch_div_K', 'width_in', 'height_out', 'width_out', 'Kx' and 'Ky' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_pool_2D_U0' to 'start_for_pool_2DdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_hs2axis_U0' to 'start_for_hs2axiseOg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool'.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 137.789 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pool_mul_64ns_32nbkb_MulnS_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'pool_srem_32ns_32cud_div'
+INFO: [RTMG 210-278] Implementing memory 'pool_2D_buf_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-285] Implementing FIFO 'ch_div_K_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_in_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_out_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_out_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Ky_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'stream_tp_V_V_U(fifo_w64_d8_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ch_div_K_c7_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_out_c8_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'stream_tp2_V_V_U(fifo_w64_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pool_2DdEe_U(start_for_pool_2DdEe)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_hs2axiseOg_U(start_for_hs2axiseOg)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 201.723 ; gain = 110.234
+INFO: [VHDL 208-304] Generating VHDL RTL for pool.
+INFO: [VLOG 209-307] Generating Verilog RTL for pool.
+INFO: [HLS 200-112] Total elapsed time: 18.903 seconds; peak allocated memory: 137.789 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'pool/pool.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 166.195 ; gain = 74.676
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 166.195 ; gain = 74.676
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 166.195 ; gain = 74.676
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] pool/pool.cpp:140: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 166.195 ; gain = 74.676
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1' (pool/pool.cpp:125) in function 'pool_2D' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1' (pool/pool.cpp:81) in function 'pool_1D' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (pool/pool.cpp:137) in function 'pool_2D' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (pool/pool.cpp:90) in function 'pool_1D' completely with a factor of 8.
+INFO: [XFORM 203-712] Applying dataflow to function 'pool', detected/extracted 3 process function(s): 
+	 'pool_1D54'
+	 'pool_2D'
+	 'hs2axis'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (pool/pool.cpp:126:5) to (pool/pool.cpp:144:5) in function 'pool_2D'... converting 25 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (pool/pool.cpp:82:5) to (pool/pool.cpp:98:5) in function 'pool_1D54'... converting 25 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 166.195 ; gain = 74.676
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (pool/pool.cpp:122:13) in function 'pool_2D'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (pool/pool.cpp:119:13) in function 'pool_2D'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (pool/pool.cpp:78:13) in function 'pool_1D54'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (pool/pool.cpp:75:13) in function 'pool_1D54'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 178.582 ; gain = 87.062
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pool' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool_1D54' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 38.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.746 seconds; current allocated memory: 130.881 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.181 seconds; current allocated memory: 131.580 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool_2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 38.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.502 seconds; current allocated memory: 132.174 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.183 seconds; current allocated memory: 132.794 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hs2axis' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.286 seconds; current allocated memory: 133.010 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.055 seconds; current allocated memory: 133.169 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.064 seconds; current allocated memory: 133.328 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.146 seconds; current allocated memory: 133.723 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool_1D54' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pool_mul_64ns_32ns_96_5_1' to 'pool_mul_64ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'pool_srem_32ns_32ns_32_36_1' to 'pool_srem_32ns_32cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'pool_mul_64ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pool_srem_32ns_32cud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool_1D54'.
+INFO: [HLS 200-111]  Elapsed time: 0.226 seconds; current allocated memory: 135.559 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool_2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'pool_mul_64ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'pool_srem_32ns_32cud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool_2D'.
+INFO: [HLS 200-111]  Elapsed time: 0.526 seconds; current allocated memory: 137.266 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hs2axis' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hs2axis'.
+INFO: [HLS 200-111]  Elapsed time: 0.476 seconds; current allocated memory: 137.969 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/in_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/out_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/ch_div_K' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/height_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/width_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/height_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/width_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/Kx' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pool/Ky' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pool' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'ch_div_K', 'width_in', 'height_out', 'width_out', 'Kx' and 'Ky' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_pool_2D_U0' to 'start_for_pool_2DdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_hs2axis_U0' to 'start_for_hs2axiseOg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pool'.
+INFO: [HLS 200-111]  Elapsed time: 0.217 seconds; current allocated memory: 138.680 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pool_mul_64ns_32nbkb_MulnS_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'pool_srem_32ns_32cud_div'
+INFO: [RTMG 210-278] Implementing memory 'pool_2D_buf_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-285] Implementing FIFO 'ch_div_K_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_in_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_out_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_out_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'Ky_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'stream_tp_V_V_U(fifo_w128_d8_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ch_div_K_c7_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_out_c8_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'stream_tp2_V_V_U(fifo_w128_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pool_2DdEe_U(start_for_pool_2DdEe)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_hs2axiseOg_U(start_for_hs2axiseOg)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 203.508 ; gain = 111.988
+INFO: [VHDL 208-304] Generating VHDL RTL for pool.
+INFO: [VLOG 209-307] Generating Verilog RTL for pool.
+INFO: [HLS 200-112] Total elapsed time: 18.789 seconds; peak allocated memory: 138.680 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

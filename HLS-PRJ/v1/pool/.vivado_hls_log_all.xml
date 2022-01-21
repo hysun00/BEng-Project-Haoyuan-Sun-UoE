@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'Pool' consists of the following:&#xD;&#xA;&#x9;'mul' operation of DSP[123] ('ret.V', pool/pool.cpp:53) [121]  (3.36 ns)&#xD;&#xA;&#x9;'add' operation of DSP[123] ('ret.V', pool/pool.cpp:53) [123]  (3.02 ns)&#xD;&#xA;&#x9;'add' operation ('ret.V', pool/pool.cpp:53) [124]  (0 ns)&#xD;&#xA;&#x9;'add' operation ('add_ln53', pool/pool.cpp:53) [125]  (4.89 ns)" projectName="pool" solutionName="solution1" date="2022-01-14T12:00:54.150+0000" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (11.2658ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="pool" solutionName="solution1" date="2022-01-14T12:00:54.146+0000" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Pool_ap_uitofp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="pool" solutionName="solution1" date="2022-01-14T12:02:10.821+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Pool_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="pool" solutionName="solution1" date="2022-01-14T12:02:00.724+0000" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

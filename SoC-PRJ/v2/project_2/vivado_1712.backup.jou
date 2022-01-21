@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 14 02:35:49 2022
+# Process ID: 1712
+# Current directory: F:/BEng_Project/SoC_PRJ/base_v2/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32228 F:\BEng_Project\SoC_PRJ\base_v2\project_2\project_2.xpr
+# Log file: F:/BEng_Project/SoC_PRJ/base_v2/project_2/vivado.log
+# Journal file: F:/BEng_Project/SoC_PRJ/base_v2/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/BEng_Project/SoC_PRJ/base_v2/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+file copy -force F:/BEng_Project/SoC_PRJ/base_v2/project_2/project_2.runs/impl_1/design_1_wrapper.bit F:/BEng_Project/SoC_PRJ/base_v2/project_2/ai.bit

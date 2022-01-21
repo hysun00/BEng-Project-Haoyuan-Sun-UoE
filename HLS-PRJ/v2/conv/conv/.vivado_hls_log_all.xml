@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'LOOP_cout' (conv/conv.cpp:84:5) in function 'conv' : &#xD;&#xA;&#xD;&#xA;the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop." projectName="conv" solutionName="solution1" date="2022-01-16T09:35:03.973+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1.1.1.1.1.1.1' (conv/conv.cpp:116) because its parent loop or function is pipelined." projectName="conv" solutionName="solution1" date="2022-01-16T09:35:03.391+0000" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] conv/conv.cpp:118: variable-indexed range selection may cause suboptimal QoR." projectName="conv" solutionName="solution1" date="2022-01-16T09:35:03.164+0000" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

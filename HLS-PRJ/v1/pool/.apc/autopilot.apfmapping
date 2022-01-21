@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pool.h" path="F:\BEng_Project\HLS_PRJ\v1\pool\pool.h"/>
+    <originFiles name="pool.cpp" path="F:\BEng_Project\HLS_PRJ\v1\pool\pool.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="F:\BEng_Project\HLS_PRJ\v1\pool\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

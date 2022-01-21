@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 14 19:33:35 2022
+# Process ID: 28764
+# Current directory: F:/BEng_Project/SoC_PRJ/base_v2/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28196 F:\BEng_Project\SoC_PRJ\base_v2\project_2\project_2.xpr
+# Log file: F:/BEng_Project/SoC_PRJ/base_v2/project_2/vivado.log
+# Journal file: F:/BEng_Project/SoC_PRJ/base_v2/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/BEng_Project/SoC_PRJ/base_v2/project_2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/BEng_Project/HLS_PRJ/v2/conv'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/BEng_Project/HLS_PRJ/v2/pool'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 773.105 ; gain = 136.355
+update_compile_order -fileset sources_1
+file mkdir F:/BEng_Project/SoC_PRJ/base_v2/project_2/project_2.sdk
+write_hwdef -force  -file F:/BEng_Project/SoC_PRJ/base_v2/project_2/project_2.sdk/design_1_wrapper.hdf
+file copy -force F:/BEng_Project/SoC_PRJ/base_v2/project_2/project_2.runs/impl_1/design_1_wrapper.sysdef F:/BEng_Project/SoC_PRJ/base_v2/project_2/design_1_wrapper.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 14 19:34:59 2022...

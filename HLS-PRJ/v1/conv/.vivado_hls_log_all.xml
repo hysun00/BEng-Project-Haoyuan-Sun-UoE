@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1.1.1.1.1' (conv/conv.cpp:64) in function 'Conv': cannot completely unroll a loop with a variable trip count." projectName="conv" solutionName="solution1" date="2022-01-14T11:50:37.822+0000" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] In file included from conv/conv.cpp:1:&#xD;&#xA;conv/conv.cpp:74:16: warning: &amp; has lower precedence than &lt;; &lt; will be evaluated first [-Wparentheses]&#xD;&#xA;    if(relu_en &amp; sum&lt;0)sum=0;&#xD;&#xA;               ^~~~~~~&#xD;&#xA;conv/conv.cpp:74:16: note: place parentheses around the &lt; expression to silence this warning&#xD;&#xA;    if(relu_en &amp; sum&lt;0)sum=0;&#xD;&#xA;               ^&#xD;&#xA;                 (    )&#xD;&#xA;conv/conv.cpp:74:16: note: place parentheses around the &amp; expression to evaluate it first&#xD;&#xA;    if(relu_en &amp; sum&lt;0)sum=0;&#xD;&#xA;               ^&#xD;&#xA;       (            )&#xD;&#xA;1 warning generated." projectName="conv" solutionName="solution1" date="2022-01-14T11:50:36.457+0000" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Conv_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="conv" solutionName="solution1" date="2022-01-14T11:51:18.495+0000" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
