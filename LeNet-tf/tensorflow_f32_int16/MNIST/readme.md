@@ -16,7 +16,7 @@ The MNIST_data folder stores the MNIST dataset for training and testing the CNN.
 
 The mnist_py.py is the top-level module you need to run. In minist_py.py, I built a LeNet-5 model and tested its accuracy. With proper training process, you will get the weights and biases. These parameters are 32-bit floating numbers by default.
 
-In recorder.py, I designed the functions recording the weights and biases of CNN in the desired shape. More importantly, I designed the functions mapping the 32-bit floating (f32) numbers into a 16-bit integer (int16) and a very short integer.
+In recorder.py, I designed the functions recording the weights and biases of CNN in the desired shape. More importantly, I designed the functions mapping the 32-bit floating (f32) numbers into a 16-bit integer (int16) and a very short integer indicating the number of binary fraction bits.
 
 In export.py is the function export() defined. This function calls the functions defined in recorder.py to reshape and/or compress the f32 data and/or record the precision of the f32 data. It is called at the bottom of the mnist_py.py so that the information and parameters you need can be exported to the correct folder when the training is finished.
 
